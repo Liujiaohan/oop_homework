@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--servlet-->
+    <servlet>
+        <servlet-name>activities</servlet-name>
+        <servlet-class>servlet.activity.Activities</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>certain_activity</servlet-name>
+        <servlet-class>servlet.activity.CertainActivity</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add_activity</servlet-name>
+        <servlet-class>servlet.activity.AddActivity</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>activities_in_order</servlet-name>
+        <servlet-class>servlet.activity.ActivitiesInOrder</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>masses</servlet-name>
+        <servlet-class>servlet.mass.Masses</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>certain_mass</servlet-name>
+        <servlet-class>servlet.mass.CertainMass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add_mass</servlet-name>
+        <servlet-class>servlet.mass.AddMass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mass_in_order</servlet-name>
+        <servlet-class>servlet.mass.MassesInOrder</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>users</servlet-name>
+        <servlet-class>servlet.user.Users</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>servlet.user.AddUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>certain_user</servlet-name>
+        <servlet-class>servlet.user.CertainUser</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>image</servlet-name>
+        <servlet-class>servlet.image.ShowImage</servlet-class>
+    </servlet>
+
+
+
+    <!--servlet-mapping-->
+    <servlet-mapping>
+        <servlet-name>activities</servlet-name>
+        <url-pattern>/activity/activities</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>certain_activity</servlet-name>
+        <url-pattern>/activity/certainactivity</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add_activity</servlet-name>
+        <url-pattern>/activity/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>activities_in_order</servlet-name>
+        <url-pattern>/activity/order</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>masses</servlet-name>
+        <url-pattern>/mass/masses</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>certain_mass</servlet-name>
+        <url-pattern>/mass/certainmass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add_mass</servlet-name>
+        <url-pattern>/mass/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mass_in_order</servlet-name>
+        <url-pattern>/mass/order</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>users</servlet-name>
+        <url-pattern>/user/users</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/user/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>certain_user</servlet-name>
+        <url-pattern>/user/certainuser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>image</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
+</web-app>
